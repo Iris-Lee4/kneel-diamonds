@@ -1,23 +1,23 @@
 //store transient state
 const transientState = {
-    "metal": '',
-    "size":  0,
-    "style": ''
+    "metalId": '',
+    "sizeId":  0,
+    "styleId": ''
 }
 
 //setter functions for each property's value and export 
 export const setMetal = (chosenMetal) => {
-    transientState.metal = chosenMetal
+    transientState.metalId = chosenMetal
     console.log(transientState)
 }
 
 export const setSize = (chosenSize) => {
-    transientState.size = chosenSize
+    transientState.sizeId = chosenSize
     console.log(transientState)
 }
 
 export const setStyle = (chosenStyle) => {
-    transientState.style = chosenStyle
+    transientState.styleId = chosenStyle
     console.log(transientState)
 }
 

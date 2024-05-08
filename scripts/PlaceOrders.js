@@ -10,5 +10,5 @@ export const placeOrderButton = () => {
 
     document.addEventListener("click", handlePlaceOrder)
 
-    return "<div><button id='placeOrder'>Place Order</button></div>"
+    return "<div><button id='placeOrder'>Create Custom Order</button></div>"
 }

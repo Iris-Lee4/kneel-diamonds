@@ -40,11 +40,12 @@ const render = async () => {
         <article class="customOrders">
             <h2>Custom Jewelry Orders</h2>
             ${ordersPlacedHTML}
-
         </article>
     `
 
     container.innerHTML = composedHTML
 }
+
+document.addEventListener("newOrderCreated", render)
 
 render();

@@ -1,0 +1,28 @@
+.choices {
+    display: flex;
+    justify-content: space-around;
+}
+
+.options {
+    border-style: dashed;
+    border-color: lightskyblue;
+    border-radius: 25px;
+    padding: 1em;
+    width: 25%;
+    margin-bottom: 1em;
+}
+
+#placeOrder {
+    background-color: orange;
+    color: white;
+    margin-left: 1.5em;
+}
+
+.customOrders {
+    margin: 1em;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:darkslategray
+}
