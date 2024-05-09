@@ -15,14 +15,22 @@
 #placeOrder {
     background-color: orange;
     color: white;
-    margin-left: 1.5em;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
 }
 
 .customOrders {
     margin: 1em;
+    margin-left: 3rem;
 }
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:darkslategray
+}
+
+.jewelry_type {
+    display: flex;
+    margin-bottom: 0.5rem;
+    margin-left: 3rem;
 }

@@ -3,6 +3,7 @@ import { SizeOptions } from "./SizeOptions.js";
 import { StyleOptions } from "./StyleOptions.js";
 import { placeOrderButton } from "./PlaceOrders.js";
 import { Orders } from "./OrdersPlaced.js";
+import { JewelryOptions } from "./JewelryType.js";
 
 const container = document.querySelector('#container');
 
@@ -12,6 +13,7 @@ const render = async () => {
     const styleOptionsHTML = await StyleOptions();
     const orderHTML = await placeOrderButton();
     const ordersPlacedHTML = await Orders();
+    const jewelryTypeHTML = await JewelryOptions();
 
     const composedHTML = `
         <h1>Kneel Diamonds</h1>
@@ -32,7 +34,11 @@ const render = async () => {
                 ${styleOptionsHTML}
             </section>
         </article>
-
+        
+        <article class="jewelry_type">
+            ${jewelryTypeHTML}
+        </article>
+        
         <article class="order">
             ${orderHTML}
         </article>
