@@ -2,15 +2,15 @@ import { setJewelryType } from "./TransientState.js"
 
 const handleJewelryTypeChange = (changeEvent) => {
     if(changeEvent.target.name === 'jewelryType') {
-        setJewelryType(parseInt(changeEvent.target.value))
-    }
-}
+        setJewelryType(parseInt(changeEvent.target.value));
+    };
+};
 
 export const JewelryOptions = async () => {
-    const response = await fetch("http://localhost:8088/jewelryTypes")
-    const jewelryType = await response.json()
+    const response = await fetch("http://localhost:8088/jewelryTypes");
+    const jewelryType = await response.json();
 
-    document.addEventListener("change", handleJewelryTypeChange)
+    document.addEventListener("change", handleJewelryTypeChange);
 
     let jewelryTypeHTML = ''
 
@@ -22,7 +22,7 @@ export const JewelryOptions = async () => {
         }
     )
 //this fcn needs to return a single string, not an array of strings
-    jewelryTypeHTML += divStringArray.join("")
+    jewelryTypeHTML += divStringArray.join("");
 
-    return jewelryTypeHTML
-}
+    return jewelryTypeHTML;
+};

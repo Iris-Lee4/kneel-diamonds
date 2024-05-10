@@ -50,8 +50,12 @@ const render = async () => {
     `
 
     container.innerHTML = composedHTML
-}
+};
 
-document.addEventListener("newOrderCreated", render)
+document.addEventListener("newOrderCreated", render);
+document.addEventListener("metalChanged", render);
+document.addEventListener("sizeChanged", render);
+document.addEventListener("styleChanged", render);
+
 
 render();

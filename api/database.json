@@ -150,6 +150,13 @@
       "styleId": 1,
       "jewelryTypeId": 3,
       "id": 9
+    },
+    {
+      "metalId": 3,
+      "sizeId": 3,
+      "styleId": 1,
+      "jewelryTypeId": 3,
+      "id": 10
     }
   ]
 }
